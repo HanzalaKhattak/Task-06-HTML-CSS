@@ -1,10 +1,12 @@
 *{
     padding: 0;
     margin: 0;
+    color: none;
+    background-color: none;
 }
 
 body{
-    background-image: linear-gradient(rgba(255,255,255,0.395) rgba(255,255,255,0.395),url(./Assets/Coffee\ espresso\ template1.jpg));
+    background-image: url(./Assets/Coffee\ espresso\ template1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -30,4 +32,57 @@ nav{
 
 .anchors a{
     text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: rgb(75, 38, 20);
+    background-color: #ffffff6b;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 20px;
+}
+/* // For small 1000px// */
+
+@media(max-width: 1000px){
+    #logo img{
+        width : 70px;
+        height: 70px;
+        padding-left: 30px;
+    }
+    .anchors{
+        padding-right: 50px;
+    }
+    .anchors a{
+        padding: 10px 10px;
+    }
+}
+
+/* for tabs */
+
+@media(max-width: 780px){
+    #logo img{
+        height: 60px;
+        width: 60px;
+    }
+    .anchors a{
+        font: size 2.7vh; 
+        padding: 5px;
+    }
+}
+
+/* for Mobile */
+
+@media(max-width: 420px){
+    #logo img{
+        height: 50px;
+        width: 50px;
+        padding-left: 10px;
+    }
+    .anchors{
+        padding-right: 10px;
+    }
+    .anchors a{
+        padding: 5px 5px;
+        font-size: 1.6vh;
+    }
 }
