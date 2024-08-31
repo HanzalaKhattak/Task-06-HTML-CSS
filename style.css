@@ -98,6 +98,45 @@ h1 em{
     to{right: 100px;}
 }
 
+/* Coffee Section  */
+
+.coffee-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.coffee-container .coffee-cup{
+    width: 190px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.265),rgba(0,0,0,0.265)),url(./Assets/back4.jpg);
+    background-size: cover;
+    color: #fff;
+    transition: transform 0.1s ease-in 0.1s;
+}
+.coffee-cup:hover{
+    transform: scale(1.1);
+}
+
+.coffee-cup img{
+    width: 150px;
+    height: 130px;
+    position: relative;
+    top: -40px;
+    border-radius: 50%;
+}
+.coffee-cup h2{
+    margin-top: -15px;
+}
+.coffee-cup p{
+    font-size: 13px;
+    padding: 5px;
+}
+
+
+
 /* // For small 1000px// */
 
 @media(max-width: 1000px){
