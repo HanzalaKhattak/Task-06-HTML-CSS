@@ -154,6 +154,39 @@ h1 em{
     text-align: justify;
 }
 
+/* <!--Cold Coffee Section--> */
+.cold-coffee-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 90px;
+    margin-top: 60px;
+}
+
+.cold-coffee-container .cold-coffee-cup{
+    width: 220px;
+    height: 260px;
+    border: 5px solid white;
+    text-align: center;
+    background-color: rgba(185,117,83,0.589);
+    transition: transform 0.1s ease-in 0.1s;
+}
+.cold-coffee-cup:hover{
+    transform: translateY(-10px)
+}
+.cold-coffee-cup img{
+    padding: 30px 0;
+    width: 100px;
+    height: 150px;
+}
+.cold-coffee-container .text-body{
+    background-color: #fff;
+    padding: 12px;
+}
+
+.cold-coffee-cup .text-body h4{
+    font-size: 3vh;
+}
+
 
 
 /* // For small 1000px// */
@@ -234,6 +267,14 @@ h1 em{
         font-size: 2.6vh;
         font-weight: 450px;
     }
+    /* Cold Coffee  */
+    .cold-coffee-cup{
+        width: 180px;
+        height: 260px;
+    }
+    .cold-coffee-cup h4{
+        font-size: 2.2h;
+    }
 }
 
 /* for tabs */
@@ -310,6 +351,15 @@ h1 em{
         padding: 20px;
         font-size: 2vh;
         font-weight: 400px;
+    }
+    /* cold coffee  */
+    .cold-coffee-container{
+        display: grid;
+        grid-template-columns: 30% 30%;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 50px;
+        gap: 30px;
     }
 }
 
